@@ -14,6 +14,7 @@ public class PickUpTime : MonoBehaviour
         if (x2Score== true)
         {
             timeX2Score += Time.deltaTime;
+            print(timeX2Score);
             if (timeX2Score > 20)
             {
                 x2Score = false;
@@ -22,7 +23,6 @@ public class PickUpTime : MonoBehaviour
         if(minusAndPlus == false)
         {
             timeminusAndPlus += Time.deltaTime;
-            print(timeminusAndPlus);
             if (timeminusAndPlus > 20)
             {
                 minusAndPlus = true;

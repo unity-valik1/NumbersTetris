@@ -224,17 +224,9 @@ public class SlotsLine : MonoBehaviour
                     }
                 }
             }
-            //GameObject instance = Instantiate(prefabX2);
-            //instance.transform.position = this.transform.position;
-            //float number = Random.Range(-3.5f, 2.6f);
-            //instance.transform.position = new Vector3(number, transform.position.y, transform.position.z);
-
-            //float number = Random.Range(0.0f, 8.0f);
-            //instance.transform.position.x = number;
-            //instance.transform.position = new Vector2(transform.position.x, transform.position.y);
         }
 
-        if (NewBlockGeneration.gg == 1)
+        if (NewBlockGeneration.newLine == 1)
         {
             StartCoroutine(MoveObject());
         }

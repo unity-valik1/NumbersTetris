@@ -88,7 +88,7 @@ public class Slot : MonoBehaviour
         {
             time += Time.deltaTime;
 
-            if (time > 16)
+            if (time > 8)
             {
                 anim.Play("TowerBullet");
                 nextBullet = true;

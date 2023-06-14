@@ -6,8 +6,12 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
+
+    [SerializeField] Shield Shield;
     public List<GameObject> lifes;
     public int life = 5;
+
+    public bool shield = false;
 
     private float maxX = 2.5f;
     private float minX = -3.5f;
@@ -16,8 +20,6 @@ public class Gun : MonoBehaviour
     public GameObject gunGo;
     public GameObject gameOver;
     public GameObject prefabAceGun;
-
-
     public Button[] gamePad;
 
     public string tagToCheck = "AceGun";
@@ -89,8 +91,16 @@ public class Gun : MonoBehaviour
     {
         if (collision.gameObject.tag == "TowerBullet")
         {
-            life -= 1;
-            UpdateLifes();
+            if (shield==true)
+            {
+                shield = false;
+                Shield.shieldImg.gameObject.SetActive(false);
+            }
+            else
+            {
+                life -= 1;
+                UpdateLifes();
+            }
             if (life == 0)
             {
                 gameOver.gameObject.SetActive(true);

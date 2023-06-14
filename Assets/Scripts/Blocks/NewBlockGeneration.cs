@@ -12,7 +12,7 @@ public class NewBlockGeneration : MonoBehaviour
     public GameObject gameOver;
     public GameObject bg;
     public bool nextPrefab = false;
-    public static int gg = 0;
+    public static int newLine = 0;
     public float time = 0f;
     public string tagToCheck = "SlotsLine";
 
@@ -34,7 +34,7 @@ public class NewBlockGeneration : MonoBehaviour
         {
             //Debug.Log("Time: " + time);
         }
-        if (time > 12f)
+        if (time > 15f)
         {
             nextPrefab = true;
         }
@@ -42,7 +42,7 @@ public class NewBlockGeneration : MonoBehaviour
         {
             time = 0f;
             StartCoroutine(MoveObject());
-            gg = 1;
+            newLine = 1;
         }
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag(tagToCheck);
 
@@ -70,10 +70,14 @@ public class NewBlockGeneration : MonoBehaviour
         while (elapsedTime < duration)
         {
             float t = elapsedTime / duration;
-            instance.transform.position = Vector3.Lerp(startPositionGeneration, targetPosition, t);
+            if (instance)
+            {
+                instance.transform.position = Vector3.Lerp(startPositionGeneration, targetPosition, t);
+            }
             elapsedTime += Time.deltaTime;
-            gg = 0;
+            newLine = 0;
             nextPrefab = false;
+
             yield return null;
         }
     }
