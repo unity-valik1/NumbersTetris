@@ -8,9 +8,9 @@ public class GameOver : MonoBehaviour
     [SerializeField] private Score score;
     public GameObject gameOver;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("ColGO");
         gameOver.gameObject.SetActive(true);
     }
     public void ReloadScene()

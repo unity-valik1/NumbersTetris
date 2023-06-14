@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 7101238468887688511}
   - component: {fileID: 3050388826245301447}
   - component: {fileID: 5773977826837921226}
+  - component: {fileID: 4388856594508432711}
   m_Layer: 0
   m_Name: Slot8
   m_TagString: Slot
@@ -183,13 +184,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 473941653079119530}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 877942926836737349}
   spriteRenderer: {fileID: 3050388826245301447}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 473941653079119530}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 4388856594508432711}
 --- !u!212 &3050388826245301447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -266,8 +269,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &4388856594508432711
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473941653079119530}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &561078653698303110
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +353,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -361,8 +380,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -415,6 +434,7 @@ GameObject:
   - component: {fileID: 6503537579730349205}
   - component: {fileID: 1488870597124762055}
   - component: {fileID: 4125309221033213017}
+  - component: {fileID: 5621209378383840877}
   m_Layer: 0
   m_Name: Slot2
   m_TagString: Slot
@@ -451,13 +471,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 624448352836958027}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 5751817701196423028}
   spriteRenderer: {fileID: 1488870597124762055}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 624448352836958027}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 5621209378383840877}
 --- !u!212 &1488870597124762055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -534,8 +556,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &5621209378383840877
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624448352836958027}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1056833287951205347
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +586,7 @@ GameObject:
   - component: {fileID: 1139410262695359448}
   - component: {fileID: 6183319800696490117}
   - component: {fileID: 8481536940075931124}
+  - component: {fileID: 6922194873678391727}
   m_Layer: 0
   m_Name: Slot5
   m_TagString: Slot
@@ -584,13 +623,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 1056833287951205347}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 792480481641771239}
   spriteRenderer: {fileID: 6183319800696490117}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 1056833287951205347}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 6922194873678391727}
 --- !u!212 &6183319800696490117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -667,8 +708,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &6922194873678391727
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056833287951205347}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1543118290500180573
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -964,8 +1021,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1018,13 +1075,14 @@ GameObject:
   - component: {fileID: 5171161721609446213}
   - component: {fileID: 3573948728184244450}
   - component: {fileID: 461905970694610634}
+  - component: {fileID: 2274077903501839961}
   m_Layer: 0
   m_Name: Slot1
   m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2785130847304435360
 Transform:
   m_ObjectHideFlags: 0
@@ -1054,13 +1112,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 2785130847304435361}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 5153507427491017655}
   spriteRenderer: {fileID: 3573948728184244450}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 2785130847304435361}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 2274077903501839961}
 --- !u!212 &3573948728184244450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1102,15 +1162,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1decaba3adcc95c46b195b94c6042be1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6166667, y: 0.6166667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &461905970694610634
@@ -1130,15 +1190,31 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.9818182, y: 0.9818182}
+    newSize: {x: 0.6166667, y: 0.6166667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &2274077903501839961
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2785130847304435361}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &3553637254699355352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1232,8 +1308,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1340,7 +1416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1367,8 +1443,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1421,6 +1497,7 @@ GameObject:
   - component: {fileID: 149775004750394210}
   - component: {fileID: 2066723430332312647}
   - component: {fileID: 3698934195650213031}
+  - component: {fileID: 5255207328763709562}
   m_Layer: 0
   m_Name: Slot3
   m_TagString: Slot
@@ -1457,13 +1534,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 5018436630034439877}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 7516609298753940566}
   spriteRenderer: {fileID: 2066723430332312647}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 5018436630034439877}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 5255207328763709562}
 --- !u!212 &2066723430332312647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1540,8 +1619,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &5255207328763709562
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018436630034439877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5071668396012415807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1736,8 +1831,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1993,7 +2088,7 @@ GameObject:
   - component: {fileID: 7955109868209939939}
   m_Layer: 0
   m_Name: SlotsLine
-  m_TagString: Untagged
+  m_TagString: SlotsLine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2035,7 +2130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slot:
-  - {fileID: 5171161721609446213}
   - {fileID: 6503537579730349205}
   - {fileID: 149775004750394210}
   - {fileID: 6691560377194581508}
@@ -2043,9 +2137,7 @@ MonoBehaviour:
   - {fileID: 4455648007107868885}
   - {fileID: 7404693197908674820}
   - {fileID: 7101238468887688511}
-  - {fileID: 8971133149767574440}
   slots:
-  - {fileID: 2785130847304435361}
   - {fileID: 624448352836958027}
   - {fileID: 5018436630034439877}
   - {fileID: 7166245293267375502}
@@ -2053,25 +2145,28 @@ MonoBehaviour:
   - {fileID: 6869570425353925699}
   - {fileID: 7961313266773087920}
   - {fileID: 473941653079119530}
-  - {fileID: 8691126152223445517}
   sprite_number:
-  - {fileID: 21300000, guid: 8eb4e97ee6debdc468199709f1dc87d5, type: 3}
-  - {fileID: 21300000, guid: 03346b26fd921364fab2eb4d7a41c1cf, type: 3}
-  - {fileID: 21300000, guid: dc41e64738939264eb1ab14f831c07e5, type: 3}
-  - {fileID: 21300000, guid: 3f50425a8b1615b4d85189de07c01bb4, type: 3}
-  - {fileID: 21300000, guid: 6474e184ae0da114ba666a0d6cd7733d, type: 3}
-  - {fileID: 21300000, guid: 2ea84a3a51f72a74dae7d9129cce8549, type: 3}
-  - {fileID: 21300000, guid: b1d9e5a23b6c3844dba9c1638465956f, type: 3}
-  - {fileID: 21300000, guid: 215418fb0056c884ca85f49ab71c989e, type: 3}
-  - {fileID: 21300000, guid: ef23b449a56c22042bf9fe264c3e3c0a, type: 3}
-  - {fileID: 21300000, guid: 56344729fecdd2d4cbd2eee132975d6d, type: 3}
-  sprite_stone: {fileID: 21300000, guid: 086bfa471d3076e49b959d37feebce40, type: 3}
-  sprite_tower: {fileID: 21300000, guid: 1092907c71f93ed4eab274197d14b8f5, type: 3}
+  - {fileID: 21300000, guid: 6c3b9ef73ad240e47a443dca11336a34, type: 3}
+  - {fileID: 21300000, guid: 5820b77c632c68f48bc0b82daad22913, type: 3}
+  - {fileID: 21300000, guid: a1dd2afd4f3e66f459cdba6e81503b9e, type: 3}
+  - {fileID: 21300000, guid: ac55d2b9379fcc0438349b9bdce958a2, type: 3}
+  - {fileID: 21300000, guid: a0eb25e4727d1804b813549b8556c60e, type: 3}
+  - {fileID: 21300000, guid: 1decaba3adcc95c46b195b94c6042be1, type: 3}
+  sprite_stone: {fileID: 21300000, guid: 27cdf1c50b63c0d48a01c9bdff052833, type: 3}
+  sprite_tower: {fileID: 21300000, guid: 350824755b843ed40ab2ee9b89535055, type: 3}
+  particleEffectPrefab: {fileID: 1292493558886025210, guid: 373d8245ea226c7429b9670b839d783f, type: 3}
+  prefabX2: {fileID: 8412324822870045513, guid: 8d1ca025fea8c2f459b607c7d0d78835, type: 3}
+  prefabMinus: {fileID: 6662863404705916101, guid: 4d0a9844210c75a4995a94f3f30ff93a, type: 3}
+  prefabPlus: {fileID: 3821590577256317139, guid: a968b3ef0bd17de47bcf101351ae9c57, type: 3}
+  prefabLifes: {fileID: 8412324822870045513, guid: 8e18b504b130208478eeca50fd97c094, type: 3}
+  foolBlock: 0
   points: 0
   foolLine: 0
   slotStone: 0
   slotTower: 0
   generationSlots: 1
+  foolPickUp: 0
+  duration: 2
 --- !u!61 &7955109868209939939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2110,6 +2205,7 @@ GameObject:
   - component: {fileID: 4455648007107868885}
   - component: {fileID: 7791922166119483378}
   - component: {fileID: 3872010255644219875}
+  - component: {fileID: 8386511389676921943}
   m_Layer: 0
   m_Name: Slot6
   m_TagString: Slot
@@ -2146,13 +2242,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 6869570425353925699}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 4636673180213729913}
   spriteRenderer: {fileID: 7791922166119483378}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 6869570425353925699}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 8386511389676921943}
 --- !u!212 &7791922166119483378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2229,8 +2327,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &8386511389676921943
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869570425353925699}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &6892306819776005657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2458,7 @@ GameObject:
   - component: {fileID: 6691560377194581508}
   - component: {fileID: 1652361610439157816}
   - component: {fileID: 7141034107914991463}
+  - component: {fileID: 4126514988623749231}
   m_Layer: 0
   m_Name: Slot4
   m_TagString: Slot
@@ -2380,13 +2495,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 7166245293267375502}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 539500266481168851}
   spriteRenderer: {fileID: 1652361610439157816}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 7166245293267375502}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 4126514988623749231}
 --- !u!212 &1652361610439157816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2463,8 +2580,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &4126514988623749231
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166245293267375502}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7301501301633614994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2558,8 +2691,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2868,7 +3001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2895,8 +3028,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2949,6 +3082,7 @@ GameObject:
   - component: {fileID: 7404693197908674820}
   - component: {fileID: 2004785934726691296}
   - component: {fileID: 8862669475704593181}
+  - component: {fileID: 4223700239524393488}
   m_Layer: 0
   m_Name: Slot7
   m_TagString: Slot
@@ -2985,13 +3119,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 7961313266773087920}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 5291562184798410388}
   spriteRenderer: {fileID: 2004785934726691296}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 7961313266773087920}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 4223700239524393488}
 --- !u!212 &2004785934726691296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3068,8 +3204,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &4223700239524393488
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961313266773087920}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8380509002926117463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,13 +3335,14 @@ GameObject:
   - component: {fileID: 8971133149767574440}
   - component: {fileID: 3075219499328774094}
   - component: {fileID: 9044764192104451686}
+  - component: {fileID: 2000291422648046313}
   m_Layer: 0
   m_Name: Slot9
   m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8487867663979859547
 Transform:
   m_ObjectHideFlags: 0
@@ -3219,13 +3372,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsLine: {fileID: 4881863979375478769}
-  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
-  fire: {fileID: 8691126152223445517}
-  tower: 0
-  stone: 0
   number: 0
   text: {fileID: 5626408179752933649}
   spriteRenderer: {fileID: 3075219499328774094}
+  tower: 0
+  prefab: {fileID: 5590998741455325789, guid: 4ff4b2b6673f38c4bbd7b30f0a59305a, type: 3}
+  fire: {fileID: 8691126152223445517}
+  particleEffectPrefab: {fileID: 100000, guid: 83cd9cc9f9c88824ba18dc59b05ae328, type: 3}
+  stone: 0
+  anim: {fileID: 2000291422648046313}
 --- !u!212 &3075219499328774094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3302,8 +3457,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &2000291422648046313
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8691126152223445517}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ddd65657f72fce40b4c466e36efcc92, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &9125658274286311678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,7 +3541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3397,8 +3568,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

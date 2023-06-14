@@ -7,8 +7,16 @@ TagManager:
   - Gun
   - TowerBullet
   - Slot
-  - Block
-  - PlatformDestroy
+  - SlotsLine
+  - FxTemporaire
+  - SnowAvalanche
+  - AceGun
+  - X2Score
+  - BlockGunMinus
+  - BlockGunPlus
+  - Plus
+  - Minus
+  - Lifes
   layers:
   - Default
   - TransparentFX
